@@ -1,6 +1,5 @@
 /* Default Color File  */
 
-
 .feature-block-one .icon,
 .mobile-menu-visible .mobile-menu .menu-backdrop,
 .instagram-widget .wrapper-box .image .overlay-link,
@@ -39,7 +38,8 @@
 .sidebar .popular-tags li a:before,
 .sidebar .search-box .form-group button,
 .social-links-widget .social-links li a:before,
-.page-pagination li.active a, .page-pagination li a:hover,
+.page-pagination li.active a,
+.page-pagination li a:hover,
 .news-block-two .category,
 .news-block-three .inner-box:before,
 .services-section-five .active .icon-box,
@@ -71,7 +71,7 @@
 .main-header .header-upper .inner-container,
 .bootstrap-select .dropdown-menu li a.active,
 .main-header.header-style-two .header-upper .logo-box .logo,
-.shop-sidebar-wrapper .price-ranger .ranger-min-max-block input[type="submit"],
+.shop-sidebar-wrapper .price-ranger .ranger-min-max-block input[type='submit'],
 .service-block-one .icon .round-shape:before,
 .testimonial-section.style-two:before,
 .case-block-one .overlay,
@@ -94,7 +94,7 @@
 .sidebar-wrapper .price-ranger .ui-slider .ui-slider-range,
 .sidebar-wrapper .price-ranger .ui-slider-handle:before,
 .history-section .tab-btn-style-one .nav-item .nav-link.active,
-.product-tab-box .tab-btns .tab-btn.active-btn span, 
+.product-tab-box .tab-btns .tab-btn.active-btn span,
 .product-tab-box .tab-btns .tab-btn:hover span,
 .related-product .owl-theme .owl-nav .owl-prev:hover:before,
 .related-product .owl-theme .owl-nav .owl-next:hover:before,
@@ -113,11 +113,11 @@
 .tab-btn-style-one .nav-item .nav-link.active,
 .service-block-one .icon .round-shape:after,
 .sticky-header .main-menu .navigation > li.current-menu-item > a {
-	background: linear-gradient(90deg, rgba(0,54,164,1) 0%, rgba(0,126,255,1) 100%);
+  background: linear-gradient(90deg, rgba(0, 54, 164, 1) 0%, rgba(0, 126, 255, 1) 100%);
 }
 
 .btn-style-one .btn-title:before {
-    background-color: #25283a;
+  background-color: #25283a;
 }
 
 .default-video-box a:hover,
@@ -146,11 +146,11 @@
 .testimonial-section.style-two .owl-theme .owl-nav .owl-next:hover:before,
 .welcome-block-one:nth-child(1) .inner-box .read-more a:hover,
 .welcome-block-one:nth-child(3) .inner-box .read-more a:hover {
-	color: #003eae;
+  color: #003eae;
 }
 
 .welcome-block-one:nth-child(2) .inner-box .read-more a:hover {
-    color: #222;
+  color: #222;
 }
 
 .contact-form i,
@@ -165,7 +165,7 @@
 .single-shop-area .top-content .review,
 .single-shop-area .price span,
 .review-box-holder .single-review-box .text-holder .top .rating i,
-.shop-sidebar-wrapper .price-ranger .ranger-min-max-block input[type="submit"],
+.shop-sidebar-wrapper .price-ranger .ranger-min-max-block input[type='submit'],
 .team-block-one .inner-box .content .designation,
 .gallery-block-one .caption-title h5,
 .checkout-area .exisitng-customer h5 a,
@@ -186,8 +186,6 @@
 .error-section .inner-section .text,
 .services-section .author-box .designation,
 .sec-title .sub-title {
-	-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-
-
