@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import Slider from 'react-animated-slider'
 import 'react-animated-slider/build/horizontal.css'
-import '../../assets/css/slider.css'
+import '../assets/css/slider.css'
 
 const slides = [
   {
@@ -10,7 +10,7 @@ const slides = [
     line1: 'ZolutionTech',
     btnService: 'Services',
     btnLearn: 'Hvem er vi?',
-    image: require('./../../assets/images/main-slider/5.jpg'),
+    image: require('./../assets/images/main-slider/5.jpg'),
   },
 ]
 

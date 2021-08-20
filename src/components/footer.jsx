@@ -14,11 +14,7 @@ class Footer extends Component {
                     <div class='widget-content'>
                       <div class='footer-logo'>
                         <Link to='index.html'>
-                          <img
-                            class=''
-                            src={require('../../assets/images/footer-logo.png')}
-                            alt=''
-                          />
+                          <img class='' src={require('../assets/images/footer-logo.png')} alt='' />
                         </Link>
                       </div>
                       <div class='text'>
@@ -108,7 +104,7 @@ class Footer extends Component {
                         <div class='image'>
                           <img
                             class='lazy-image owl-lazy'
-                            src={require('../../assets/images/gallery/gallery-1.jpg')}
+                            src={require('../assets/images/gallery/gallery-1.jpg')}
                             alt=''
                           />
 
@@ -124,7 +120,7 @@ class Footer extends Component {
                         <div class='image'>
                           <img
                             class='lazy-image owl-lazy'
-                            src={require('../../assets/images/gallery/gallery-2.jpg')}
+                            src={require('../assets/images/gallery/gallery-2.jpg')}
                             alt=''
                           />
                           <div class='overlay-link'>
@@ -139,7 +135,7 @@ class Footer extends Component {
                         <div class='image'>
                           <img
                             class='lazy-image owl-lazy'
-                            src={require('../../assets/images/gallery/gallery-3.jpg')}
+                            src={require('../assets/images/gallery/gallery-3.jpg')}
                             alt=''
                           />
                           <div class='overlay-link'>
@@ -154,7 +150,7 @@ class Footer extends Component {
                         <div class='image'>
                           <img
                             class='lazy-image owl-lazy'
-                            src={require('../../assets/images/gallery/gallery-4.jpg')}
+                            src={require('../assets/images/gallery/gallery-4.jpg')}
                             alt=''
                           />
                           <div class='overlay-link'>
@@ -169,7 +165,7 @@ class Footer extends Component {
                         <div class='image'>
                           <img
                             class='lazy-image owl-lazy'
-                            src={require('../../assets/images/gallery/gallery-5.jpg')}
+                            src={require('../assets/images/gallery/gallery-5.jpg')}
                             alt=''
                           />
                           <div class='overlay-link'>
@@ -184,7 +180,7 @@ class Footer extends Component {
                         <div class='image'>
                           <img
                             class='lazy-image owl-lazy'
-                            src={require('../../assets/images/gallery/gallery-6.jpg')}
+                            src={require('../assets/images/gallery/gallery-6.jpg')}
                             alt=''
                           />
                           <div class='overlay-link'>
@@ -199,7 +195,7 @@ class Footer extends Component {
                         <div class='image'>
                           <img
                             class='lazy-image owl-lazy'
-                            src={require('../../assets/images/gallery/gallery-7.jpg')}
+                            src={require('../assets/images/gallery/gallery-7.jpg')}
                             alt=''
                           />
                           <div class='overlay-link'>
@@ -214,7 +210,7 @@ class Footer extends Component {
                         <div class='image'>
                           <img
                             class='lazy-image owl-lazy'
-                            src={require('../../assets/images/gallery/gallery-8.jpg')}
+                            src={require('../assets/images/gallery/gallery-8.jpg')}
                             alt=''
                           />
                           <div class='overlay-link'>
@@ -229,7 +225,7 @@ class Footer extends Component {
                         <div class='image'>
                           <img
                             class='lazy-image owl-lazy'
-                            src={require('../../assets/images/gallery/gallery-9.jpg')}
+                            src={require('../assets/images/gallery/gallery-9.jpg')}
                             alt=''
                           />
                           <div class='overlay-link'>

@@ -1,17 +1,18 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { Nav, Tab } from 'react-bootstrap'
-import Header5 from '../layout/header5'
-import Footer from '../layout/footer'
-import HomeSlider2 from '../element/home-slider2'
+import Header5 from '../components/header5'
+import Footer from '../components/footer'
+import HomeSlider2 from '../components/home-slider2'
 
-import ServiceFilter1 from '../element/service-filter1'
+import ServiceFilter1 from '../components/service-filter1'
 
-const wellcomebg1 = require('./../../assets/images/resource/image-1.jpg')
-const authorbg1 = require('./../../assets/images/background/image-1.jpg')
-// const videobg = require('./../../assets/images/background/image-2.jpg');
-const teambg = require('./../../assets/images/background/image-3.jpg')
-const newsbg = require('./../../assets/images/background/image-4.jpg')
+const wellcomebg1 = require('../assets/images/resource/image-1.jpg')
+const authorbg1 = require('../assets/images/background/image-1.jpg')
+// const videobg = require('../assets/images/background/image-2.jpg');
+const teambg = require('../assets/images/background/image-3.jpg')
+const newsbg = require('../assets/images/background/image-4.jpg')
+
 class Onepage extends Component {
   render() {
     return (
@@ -101,7 +102,7 @@ class Onepage extends Component {
                       <Tab.Pane eventKey='first' className='fadeInUp animated'>
                         <div class='clearfix'>
                           <div class='image'>
-                            <img src={require('../../assets/images/resource/image-4.jpg')} alt='' />
+                            <img src={require('../assets/images/resource/image-4.jpg')} alt='' />
                           </div>
                           <div class='text'>
                             <p>
@@ -121,7 +122,7 @@ class Onepage extends Component {
                       <Tab.Pane eventKey='second' className='fadeInUp animated'>
                         <div class='clearfix'>
                           <div class='image'>
-                            <img src={require('../../assets/images/resource/image-4.jpg')} alt='' />
+                            <img src={require('../assets/images/resource/image-4.jpg')} alt='' />
                           </div>
                           <div class='text'>
                             <p>
@@ -141,7 +142,7 @@ class Onepage extends Component {
                       <Tab.Pane eventKey='third' className='fadeInUp animated'>
                         <div class='clearfix'>
                           <div class='image'>
-                            <img src={require('../../assets/images/resource/image-4.jpg')} alt='' />
+                            <img src={require('../assets/images/resource/image-4.jpg')} alt='' />
                           </div>
                           <div class='text'>
                             <p>
@@ -165,10 +166,10 @@ class Onepage extends Component {
               <div class='col-lg-6'>
                 <div class='image-wrapper'>
                   <div class='image-one'>
-                    <img src={require('../../assets/images/resource/image-6.jpg')} alt='' />
+                    <img src={require('../assets/images/resource/image-6.jpg')} alt='' />
                   </div>
                   <div class='image-two'>
-                    <img src={require('../../assets/images/resource/image-5.jpg')} alt='' />
+                    <img src={require('../assets/images/resource/image-5.jpg')} alt='' />
                   </div>
                 </div>
               </div>
@@ -183,7 +184,7 @@ class Onepage extends Component {
               <div class='col-lg-6'>
                 <div class='image-wrapper'>
                   <div class='image-one'>
-                    <img src={require('../../assets/images/resource/image-2.jpg')} alt='' />
+                    <img src={require('../assets/images/resource/image-2.jpg')} alt='' />
                   </div>
                   <div
                     class='image-two wow fadeInUp'
@@ -191,7 +192,7 @@ class Onepage extends Component {
                     data-wow-duration='1200ms'>
                     <div class='caption'>F.</div>
                     <div class='image-outer'>
-                      <img src={require('../../assets/images/resource/image-3.jpg')} alt='' />
+                      <img src={require('../assets/images/resource/image-3.jpg')} alt='' />
                     </div>
                   </div>
                 </div>
@@ -216,7 +217,7 @@ class Onepage extends Component {
                     <div class='info-column col-md-6'>
                       <div class='icon-box'>
                         <div class='icon'>
-                          <img src={require('../../assets/images/icons/icon-1.png')} alt='' />
+                          <img src={require('../assets/images/icons/icon-1.png')} alt='' />
                         </div>
                         <h5>Phone Number</h5>
                         <h2>+897 6765 754</h2>
@@ -225,7 +226,7 @@ class Onepage extends Component {
                     <div class='info-column col-md-6'>
                       <div class='icon-box'>
                         <div class='icon'>
-                          <img src={require('../../assets/images/icons/icon-2.png')} alt='' />
+                          <img src={require('../assets/images/icons/icon-2.png')} alt='' />
                         </div>
                         <h5>Email Address</h5>
                         <h2>info@webmail.com</h2>
@@ -238,6 +239,7 @@ class Onepage extends Component {
           </div>
         </section>
 
+        {/* <!-- Skills Section --> */}
         <section class='services-section-five'>
           <div class='auto-container'>
             <Tab.Container defaultActiveKey='first'>
@@ -308,7 +310,7 @@ class Onepage extends Component {
                   <div class='row align-items-center'>
                     <div class='col-lg-6'>
                       <div class='image'>
-                        <img src={require('../../assets/images/resource/image-18.jpg')} alt='' />
+                        <img src={require('../assets/images/resource/image-18.jpg')} alt='' />
                       </div>
                     </div>
                     <div class='col-lg-6'>
@@ -326,11 +328,6 @@ class Onepage extends Component {
                           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                           commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
                           velit esse cillum.
-                        </div>
-                        <div class='link-btn'>
-                          <Link to={'/#'} class='theme-btn btn-style-one'>
-                            <span class='btn-title'>Learn More</span>
-                          </Link>
                         </div>
                       </div>
                     </div>
@@ -340,7 +337,7 @@ class Onepage extends Component {
                   <div class='row align-items-center'>
                     <div class='col-lg-6'>
                       <div class='image'>
-                        <img src={require('../../assets/images/resource/image-18.jpg')} alt='' />
+                        <img src={require('../assets/images/resource/image-18.jpg')} alt='' />
                       </div>
                     </div>
                     <div class='col-lg-6'>
@@ -358,11 +355,6 @@ class Onepage extends Component {
                           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                           commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
                           velit esse cillum.
-                        </div>
-                        <div class='link-btn'>
-                          <Link to={'/#'} class='theme-btn btn-style-one'>
-                            <span class='btn-title'>Learn More</span>
-                          </Link>
                         </div>
                       </div>
                     </div>
@@ -372,7 +364,7 @@ class Onepage extends Component {
                   <div class='row align-items-center'>
                     <div class='col-lg-6'>
                       <div class='image'>
-                        <img src={require('../../assets/images/resource/image-18.jpg')} alt='' />
+                        <img src={require('../assets/images/resource/image-18.jpg')} alt='' />
                       </div>
                     </div>
                     <div class='col-lg-6'>
@@ -390,11 +382,6 @@ class Onepage extends Component {
                           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                           commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
                           velit esse cillum.
-                        </div>
-                        <div class='link-btn'>
-                          <Link to={'/#'} class='theme-btn btn-style-one'>
-                            <span class='btn-title'>Learn More</span>
-                          </Link>
                         </div>
                       </div>
                     </div>
@@ -404,7 +391,7 @@ class Onepage extends Component {
                   <div class='row align-items-center'>
                     <div class='col-lg-6'>
                       <div class='image'>
-                        <img src={require('../../assets/images/resource/image-18.jpg')} alt='' />
+                        <img src={require('../assets/images/resource/image-18.jpg')} alt='' />
                       </div>
                     </div>
                     <div class='col-lg-6'>
@@ -422,11 +409,6 @@ class Onepage extends Component {
                           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                           commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
                           velit esse cillum.
-                        </div>
-                        <div class='link-btn'>
-                          <Link to={'/#'} class='theme-btn btn-style-one'>
-                            <span class='btn-title'>Learn More</span>
-                          </Link>
                         </div>
                       </div>
                     </div>
@@ -436,7 +418,7 @@ class Onepage extends Component {
                   <div class='row align-items-center'>
                     <div class='col-lg-6'>
                       <div class='image'>
-                        <img src={require('../../assets/images/resource/image-18.jpg')} alt='' />
+                        <img src={require('../assets/images/resource/image-18.jpg')} alt='' />
                       </div>
                     </div>
                     <div class='col-lg-6'>
@@ -454,11 +436,6 @@ class Onepage extends Component {
                           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                           commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
                           velit esse cillum.
-                        </div>
-                        <div class='link-btn'>
-                          <Link to={'/#'} class='theme-btn btn-style-one'>
-                            <span class='btn-title'>Learn More</span>
-                          </Link>
                         </div>
                       </div>
                     </div>
@@ -468,7 +445,7 @@ class Onepage extends Component {
                   <div class='row align-items-center'>
                     <div class='col-lg-6'>
                       <div class='image'>
-                        <img src={require('../../assets/images/resource/image-18.jpg')} alt='' />
+                        <img src={require('../assets/images/resource/image-18.jpg')} alt='' />
                       </div>
                     </div>
                     <div class='col-lg-6'>
@@ -486,11 +463,6 @@ class Onepage extends Component {
                           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                           commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
                           velit esse cillum.
-                        </div>
-                        <div class='link-btn'>
-                          <Link to={'/#'} class='theme-btn btn-style-one'>
-                            <span class='btn-title'>Learn More</span>
-                          </Link>
                         </div>
                       </div>
                     </div>

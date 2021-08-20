@@ -1,6 +1,6 @@
 // import React from 'react';
 import React, { Component } from 'react'
-import Router from './markup/router'
+import Router from './components/router'
 import './assets/css/bootstrap.css'
 import './assets/css/style.css'
 import './assets/css/responsive.css'

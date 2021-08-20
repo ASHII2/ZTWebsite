@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
-import Onepage from './pages/HomePage'
-import BackToTop from './layout/backToTop'
+import Onepage from '../pages/HomePage'
+import BackToTop from './backToTop'
 
 class Router extends Component {
   render() {
