@@ -6622,7 +6622,7 @@ img.lazy-image.loaded {
 .portfolio-details .single-project-info {
   position: absolute;
   right: 0;
-  bottom: -180px;
+  bottom: 0;
   -webkit-box-shadow: 0px 8px 16px 0px rgba(123, 123, 123, 0.1);
   box-shadow: 0px 8px 16px 0px rgba(123, 123, 123, 0.1);
   padding: 50px;

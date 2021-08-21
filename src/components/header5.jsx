@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { HashLink as Link } from 'react-router-hash-link'
 
 import Select from 'react-select'
 
@@ -74,7 +74,7 @@ const Header5 = () => {
               </div>
 
               <div class='top-right'>
-                <Link to={'/#'} class='theme-btn btn-style-two'>
+                <Link smooth to={'/#contact'} class='theme-btn btn-style-two'>
                   <span class='btn-title'>Get A Quote</span>
                 </Link>
               </div>
@@ -84,7 +84,9 @@ const Header5 = () => {
 
         {/* <!-- Header Upper --> */}
         <div class='header-upper' style={sticky ? customStyles.stickyHeader : {}}>
-          <div class='auto-container'>
+          <div
+            class='auto-container'
+            style={sticky ? customStyles.fullWidth : customStyles.transition}>
             <div class='inner-container'>
               {/* <!--Nav Box--> */}
               <div class='nav-outer clearfix'>
@@ -98,45 +100,30 @@ const Header5 = () => {
                   <div class='collapse navbar-collapse show clearfix' id='navbarSupportedContent'>
                     <ul class='navigation scroll-nav clearfix'>
                       <li>
-                        <Link to={'/#home'}>Home</Link>
+                        <Link smooth to={'/#us'}>
+                          Why us
+                        </Link>
                       </li>
                       <li>
-                        <Link to={'/#about'}>About Us</Link>
+                        <Link smooth to={'/#skills'}>
+                          Services
+                        </Link>
                       </li>
                       <li>
-                        <Link to={'/#service'}>Services</Link>
+                        <Link smooth to={'/#about'}>
+                          About
+                        </Link>
                       </li>
                       <li>
-                        <Link to={'/#gallery'}>Gallery</Link>
+                        <Link smooth to={'/#portfolio'}>
+                          Our work
+                        </Link>
                       </li>
+
                       <li>
-                        <Link to={'/#team'}>Team</Link>
-                      </li>
-                      <li>
-                        <Link to={'/#contact'}>Contact</Link>
-                      </li>
-                      <li class='dropdown'>
-                        <Link to={'/#'}>Pages</Link>
-                        <ul>
-                          <li>
-                            <Link to={'/#'}>Home page 01</Link>
-                          </li>
-                          <li>
-                            <Link to={'/index-2'}>Home page 02</Link>
-                          </li>
-                          <li>
-                            <Link to={'/index-3'}>Home page 03</Link>
-                          </li>
-                          <li>
-                            <Link to={'/index-4'}>Home page 04</Link>
-                          </li>
-                          <li>
-                            <Link to={'/onepage'}>Onepage Version</Link>
-                          </li>
-                          <li>
-                            <Link to={'/rtl-home'}>Home RTL</Link>
-                          </li>
-                        </ul>
+                        <Link smooth to={'/#contact'}>
+                          Contact
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -145,23 +132,13 @@ const Header5 = () => {
 
                 <ul class='social-links clearfix'>
                   <li>
-                    <Link to={'/#'}>
+                    <Link target='_blank' to={{ pathname: 'facebook' }}>
                       <span class='fab fa-facebook-f'></span>
                     </Link>
                   </li>
                   <li>
-                    <Link to={'/#'}>
-                      <span class='fab fa-twitter'></span>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={'/#'}>
+                    <Link target='_blank' to={{ pathname: 'instagram' }}>
                       <span class='fab fa-linkedin-in'></span>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={'/#'}>
-                      <span class='fab fa-pinterest-p'></span>
                     </Link>
                   </li>
                 </ul>
@@ -253,5 +230,13 @@ const customStyles = {
     position: 'fixed',
     top: 0,
     width: '100%',
+  },
+  fullWidth: {
+    maxWidth: 'none',
+    padding: 0,
+    transition: '0.4s ease',
+  },
+  transition: {
+    transition: '0.4s ease',
   },
 }

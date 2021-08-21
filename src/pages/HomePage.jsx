@@ -1,10 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { Nav, Tab } from 'react-bootstrap'
-import Header5 from '../components/header5'
-import Footer from '../components/footer'
 import HomeSlider2 from '../components/home-slider2'
-
 import ServiceFilter1 from '../components/service-filter1'
 
 const wellcomebg1 = require('../assets/images/resource/image-1.jpg')
@@ -17,58 +14,10 @@ class Onepage extends Component {
   render() {
     return (
       <>
-        <Header5 />
-
-        {/* <!--Search Popup--> */}
-        <div id='search-popup' class='search-popup'>
-          <div class='close-search theme-btn'>
-            <span class='flaticon-cancel'></span>
-          </div>
-          <div class='popup-inner'>
-            <div class='overlay-layer'></div>
-            <div class='search-form'>
-              <form method='post' action='http://azim.commonsupport.com/Finandox/index.html'>
-                <div class='form-group'>
-                  <fieldset>
-                    <input
-                      type='search'
-                      class='form-control'
-                      name='search-input'
-                      value=''
-                      placeholder='Search Here'
-                      required
-                    />
-                    <input type='submit' value='Search Now!' class='theme-btn' />
-                  </fieldset>
-                </div>
-              </form>
-              <br />
-              <h3>Recent Search Keywords</h3>
-              <ul class='recent-searches'>
-                <li>
-                  <Link to={'/#'}>Finance</Link>
-                </li>
-                <li>
-                  <Link to={'/#'}>Idea</Link>
-                </li>
-                <li>
-                  <Link to={'/#'}>Service</Link>
-                </li>
-                <li>
-                  <Link to={'/#'}>Growth</Link>
-                </li>
-                <li>
-                  <Link to={'/#'}>Plan</Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
         <HomeSlider2 />
 
         {/* <!-- Why Choose Us Section --> */}
-        <section class='why-chooseus-section'>
+        <section id='us' class='why-chooseus-section'>
           <div class='auto-container'>
             <div class='row align-items-center'>
               <div class='col-lg-6'>
@@ -177,70 +126,8 @@ class Onepage extends Component {
           </div>
         </section>
 
-        {/* <!-- About Section --> */}
-        <section class='about-section' id='about'>
-          <div class='auto-container'>
-            <div class='row align-items-center'>
-              <div class='col-lg-6'>
-                <div class='image-wrapper'>
-                  <div class='image-one'>
-                    <img src={require('../assets/images/resource/image-2.jpg')} alt='' />
-                  </div>
-                  <div
-                    class='image-two wow fadeInUp'
-                    data-wow-delay='200ms'
-                    data-wow-duration='1200ms'>
-                    <div class='caption'>F.</div>
-                    <div class='image-outer'>
-                      <img src={require('../assets/images/resource/image-3.jpg')} alt='' />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class='col-lg-6'>
-                <div class='content-box'>
-                  <div class='sec-title'>
-                    <div class='sub-title'>About Us</div>
-                    <h2>
-                      We Work With <br />
-                      You To Address
-                    </h2>
-                    <div class='text'>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                      cillum dolore eu fugiat nulla pariatur.
-                    </div>
-                  </div>
-                  <div class='row'>
-                    <div class='info-column col-md-6'>
-                      <div class='icon-box'>
-                        <div class='icon'>
-                          <img src={require('../assets/images/icons/icon-1.png')} alt='' />
-                        </div>
-                        <h5>Phone Number</h5>
-                        <h2>+897 6765 754</h2>
-                      </div>
-                    </div>
-                    <div class='info-column col-md-6'>
-                      <div class='icon-box'>
-                        <div class='icon'>
-                          <img src={require('../assets/images/icons/icon-2.png')} alt='' />
-                        </div>
-                        <h5>Email Address</h5>
-                        <h2>info@webmail.com</h2>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* <!-- Skills Section --> */}
-        <section class='services-section-five'>
+        <section id='skills' class='services-section-five'>
           <div class='auto-container'>
             <Tab.Container defaultActiveKey='first'>
               <Nav className='nav-tabs tab-btn-style-one'>
@@ -473,6 +360,68 @@ class Onepage extends Component {
           </div>
         </section>
 
+        {/* <!-- About Section --> */}
+        <section class='about-section' id='about'>
+          <div class='auto-container'>
+            <div class='row align-items-center'>
+              <div class='col-lg-6'>
+                <div class='image-wrapper'>
+                  <div class='image-one'>
+                    <img src={require('../assets/images/resource/image-2.jpg')} alt='' />
+                  </div>
+                  <div
+                    class='image-two wow fadeInUp'
+                    data-wow-delay='200ms'
+                    data-wow-duration='1200ms'>
+                    <div class='caption'>F.</div>
+                    <div class='image-outer'>
+                      <img src={require('../assets/images/resource/image-3.jpg')} alt='' />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='col-lg-6'>
+                <div class='content-box'>
+                  <div class='sec-title'>
+                    <div class='sub-title'>About Us</div>
+                    <h2>
+                      We Work With <br />
+                      You To Address
+                    </h2>
+                    <div class='text'>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                      cillum dolore eu fugiat nulla pariatur.
+                    </div>
+                  </div>
+                  <div class='row'>
+                    <div class='info-column col-md-6'>
+                      <div class='icon-box'>
+                        <div class='icon'>
+                          <img src={require('../assets/images/icons/icon-1.png')} alt='' />
+                        </div>
+                        <h5>Phone Number</h5>
+                        <h2>+897 6765 754</h2>
+                      </div>
+                    </div>
+                    <div class='info-column col-md-6'>
+                      <div class='icon-box'>
+                        <div class='icon'>
+                          <img src={require('../assets/images/icons/icon-2.png')} alt='' />
+                        </div>
+                        <h5>Email Address</h5>
+                        <h2>info@webmail.com</h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* <!-- Gallery Section --> */}
         <ServiceFilter1 />
 
@@ -613,8 +562,6 @@ class Onepage extends Component {
             </div>
           </div>
         </section>
-
-        <Footer />
       </>
     )
   }

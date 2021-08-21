@@ -1,226 +1,150 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-import Header from '../layout/header'
-import Footer from '../layout/footer'
+import React, { useEffect, useState } from 'react'
+import { Link, Redirect, useHistory } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
+
+import Header5 from '../components/header5'
+import Footer from '../components/footer'
+import { portfolio } from '../assets/data/portfolio'
 
 const aboutbg = require('./../assets/images/background/image-11.jpg')
 
-class SinglePortfolio extends Component {
-  render() {
-    return (
-      <>
-        <Header />
-        {/* <!--Search Popup--> */}
-        <div id='search-popup' class='search-popup'>
-          <div class='close-search theme-btn'>
-            <span class='flaticon-cancel'></span>
-          </div>
-          <div class='popup-inner'>
-            <div class='overlay-layer'></div>
-            <div class='search-form'>
-              <form method='post' action='http://azim.commonsupport.com/Finandox/index.html'>
-                <div class='form-group'>
-                  <fieldset>
-                    <input
-                      type='search'
-                      class='form-control'
-                      name='search-input'
-                      value=''
-                      placeholder='Search Here'
-                      required
-                    />
-                    <input type='submit' value='Search Now!' class='theme-btn' />
-                  </fieldset>
-                </div>
-              </form>
-              <br />
-              <h3>Recent Search Keywords</h3>
-              <ul class='recent-searches'>
+const SinglePortfolio = (props) => {
+  const [project, setProject] = useState({})
+  let { id } = props.match.params
+  const history = useHistory()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+    let currentProject = portfolio.find((obj) => obj.id === +id)
+    currentProject ? setProject(currentProject) : history.replace('/404')
+  }, [])
+
+  const findIcon = (type) => {
+    switch (true) {
+      case type === 'facebook':
+        return 'fab fa-facebook-f'
+
+      case type === 'instagram':
+        return 'fab fa-instagram'
+
+      case type === 'website':
+        return 'fas fa-desktop'
+      default:
+        break
+    }
+  }
+
+  return (
+    <>
+      {/* <!-- Page Banner Section --> */}
+      {project?.id && (
+        <>
+          <section class='page-banner'>
+            <div
+              className='page-banner-bg'
+              style={{ backgroundImage: 'url(' + aboutbg + ')' }}></div>
+            <div class='bottom-rotten-curve alternate'></div>
+
+            <div class='auto-container'>
+              <h1>{project.brand}</h1>
+              <ul class='bread-crumb clearfix'>
                 <li>
-                  <Link to={'/#'}>Finance</Link>
+                  <Link to={'/'}>Home</Link>
                 </li>
-                <li>
-                  <Link to={'/#'}>Idea</Link>
-                </li>
-                <li>
-                  <Link to={'/#'}>Service</Link>
-                </li>
-                <li>
-                  <Link to={'/#'}>Growth</Link>
-                </li>
-                <li>
-                  <Link to={'/#'}>Plan</Link>
-                </li>
+                <li class='active'>{project.brand}</li>
               </ul>
             </div>
-          </div>
-        </div>
+          </section>
+          {/* <!--End Banner Section --> */}
 
-        {/* <!-- Page Banner Section --> */}
-        <section class='page-banner'>
-          <div className='page-banner-bg' style={{ backgroundImage: 'url(' + aboutbg + ')' }}></div>
-          <div class='bottom-rotten-curve alternate'></div>
-
-          <div class='auto-container'>
-            <h1>Portfolio Details</h1>
-            <ul class='bread-crumb clearfix'>
-              <li>
-                <Link to={'/#'}>Home</Link>
-              </li>
-              <li class='active'>Portfolio Details</li>
-            </ul>
-          </div>
-        </section>
-        {/* <!--End Banner Section --> */}
-
-        {/* <!-- Portfolio Details --> */}
-        <div class='portfolio-details'>
-          <div class='auto-container'>
-            <div class='top-content'>
-              <div class='image-box'>
-                <img src={require('../assets/images/resource/image-15.jpg')} alt='' />
-              </div>
-              <div class='single-project-info'>
-                <h3>Project Details</h3>
-                <ul>
-                  <li> </li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                </ul>
-                <table class='cart-table'>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <strong>Project Name:</strong>
-                      </td>
-                      <td>Brixer Consultancy</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <strong>Date:</strong>
-                      </td>
-                      <td>24th March 2020</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <strong>Author:</strong>
-                      </td>
-                      <td>Rosalina D. William</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <strong>Keyword:</strong>
-                      </td>
-                      <td>Business, Consultancy</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <ul class='social-links clearfix'>
-                  <li>
-                    <Link to={'/#'}>
-                      <span class='fab fa-facebook-f'></span>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={'/#'}>
-                      <span class='fab fa-twitter'></span>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={'/#'}>
-                      <span class='fab fa-vimeo-v'></span>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={'/#'}>
-                      <span class='fab fa-instagram'></span>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class='sec-title'>
-              <div class='sub-title'>Consulting Business</div>
-              <h2>
-                We Support Our Clients <br />
-                Five Working Days.
-              </h2>
-            </div>
-            <div class='text'>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-              dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit
-              voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-              illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
-              enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-              consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-              quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
-              quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-              voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-              aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.{' '}
-            </div>
-            <div class='row'>
-              <div class='col-lg-6'>
+          {/* <!-- Portfolio Details --> */}
+          <div class='portfolio-details'>
+            <div class='auto-container'>
+              <div class='top-content'>
                 <div class='image-box'>
-                  <img src={require('../assets/images/resource/image-16.jpg')} alt='' />
+                  <img
+                    style={{ width: '100%', maxHeight: 600, objectFit: 'cover' }}
+                    src={project.image1}
+                    alt=''
+                  />
+                </div>
+                <div class='single-project-info'>
+                  <h3>Project Details</h3>
+
+                  <table class='cart-table'>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <strong>Brand:</strong>
+                        </td>
+                        <td>{project.brand}</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <strong>Date:</strong>
+                        </td>
+                        <td>{project.date}</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <strong>Keyword:</strong>
+                        </td>
+                        <td>{project.keywords}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <ul class='social-links clearfix'>
+                    {project.socialLinks.map((link) => {
+                      return (
+                        <li key={link.type}>
+                          <Link target='_blank' to={{ pathname: link.link }}>
+                            <span class={findIcon(link.type)}></span>
+                          </Link>
+                        </li>
+                      )
+                    })}
+                  </ul>
                 </div>
               </div>
-              <div class='col-lg-6'>
-                <div class='image-box'>
-                  <img src={require('../assets/images/resource/image-17.jpg')} alt='' />
+
+              <div class='sec-title'>
+                <div class='sub-title'>{project.category}</div>
+                <h2>{project.title}</h2>
+              </div>
+              <div class='text'>{project.description1}</div>
+              <div class='row'>
+                <div class='col-lg-6'>
+                  <div class='image-box'>
+                    <img
+                      style={{ height: 500, width: '100%', objectFit: 'cover' }}
+                      src={project.image2}
+                      alt=''
+                    />
+                  </div>
+                </div>
+                <div class='col-lg-6'>
+                  <div class='image-box'>
+                    <img
+                      style={{ height: 500, width: '100%', objectFit: 'cover' }}
+                      src={project.image3}
+                      alt=''
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class='text'>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-              dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit
-              voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-              illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
-              enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-              consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-              quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
-              quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-              voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-              aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.{' '}
-            </div>
-            <div class='project-post-pagination'>
-              <div class='wrapper-box'>
-                <div class='prev-post'>
-                  <h5> Previous Post</h5>
-                  <h4>UX Design Means</h4>
-                </div>
-
-                <div class='page-view'>
-                  <span class='icon fal fa-bars'></span>
-                </div>
-
-                <div class='next-post'>
-                  <h5>Next Topic </h5>
-                  <h4>Business Goal Brings</h4>
+              <div class='text'>{project.description2}</div>
+              <div class='project-post-pagination'>
+                <div class='wrapper-box'>
+                  <HashLink smooth to='/#portfolio' class='prev-post'>
+                    <h4>Back to portfolio</h4>
+                  </HashLink>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <Footer />
-      </>
-    )
-  }
+        </>
+      )}
+    </>
+  )
 }
 export default SinglePortfolio
