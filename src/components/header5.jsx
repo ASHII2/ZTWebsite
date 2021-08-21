@@ -64,7 +64,7 @@ const Header5 = () => {
                     </div>
                     <div class='text'>Email Address</div>
                     <h4>
-                    <a href='mailto:am@zolutiontech.com'> am@zolutiontech.com</a>
+                    <a href='mailto:am@zolutionstech.com'> am@zolutiontech.com</a>
                     </h4>
                   </div>
                 </div>
