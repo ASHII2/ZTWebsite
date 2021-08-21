@@ -126,7 +126,7 @@ class BlogDestails extends Component {
                                                         <li><Link to={'/#'}><span class="fab fa-facebook-f"></span></Link></li>
                                                         <li><Link to={'/#'}><span class="fab fa-twitter"></span></Link></li>
                                                         <li><Link to={'/#'}><span class="fab fa-behance"></span></Link></li>
-                                                        <li><Link to={'/#'}><span class="fab fa-linkedin-in"></span></Link></li>
+                                                        <li><Link to={{pathname:'https://www.linkedin.com/company/w-invest-group-aps/?viewAsMember=true'}}><span class="fab fa-linkedin-in"></span></Link></li>
                                                         <li><Link to={'/#'}><span class="fab fa-youtube"></span></Link></li>
                                                     </ul>
                                                 </div>
@@ -285,7 +285,7 @@ class BlogDestails extends Component {
                                                 <li><Link to={'/#'}><span class="fab fa-facebook-f"></span></Link></li>
                                                 <li><Link to={'/#'}><span class="fab fa-twitter"></span></Link></li>
                                                 <li><Link to={'/#'}><span class="fab fa-behance"></span></Link></li>
-                                                <li><Link to={'/#'}><span class="fab fa-linkedin-in"></span></Link></li>
+                                                <li><Link to={'https://www.linkedin.com/company/w-invest-group-aps/?viewAsMember=true'}><span class="fab fa-linkedin-in"></span></Link></li>
                                                 <li><Link to={'/#'}><span class="fab fa-youtube"></span></Link></li>
                                             </ul>
                                         </div>
@@ -356,7 +356,7 @@ class BlogDestails extends Component {
                                                 <li><Link to={'/#'}><span class="fab fa-facebook-f"></span></Link></li>
                                                 <li><Link to={'/#'}><span class="fab fa-twitter"></span></Link></li>
                                                 <li><Link to={'/#'}><span class="fab fa-behance"></span></Link></li>
-                                                <li><Link to={'/#'}><span class="fab fa-linkedin-in"></span></Link></li>
+                                                <li><Link to={'https://www.linkedin.com/company/w-invest-group-aps/?viewAsMember=true'}><span class="fab fa-linkedin-in"></span></Link></li>
                                                 <li><Link to={'/#'}><span class="fab fa-pinterest-p"></span></Link></li>
                                             </ul>
                                         </div>

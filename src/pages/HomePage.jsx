@@ -55,15 +55,12 @@ class Onepage extends Component {
                           </div>
                           <div class='text'>
                             <p>
-                              Lorem ipsum dolor sit amet, consectetur adipisici ng elit, sed do
-                              eiusmod tempor incididunt ut labo re et dolore magna aliqua. Ut enim
-                              ad minim veni am, quis nostrud exercitation ullamco.
+                            Our goal is to create the greatest possible value for customers, which is created through better mutual understanding.
+
                             </p>
                             <p>
-                              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                              dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                              proident, sunt in culpa qui officia deserunt mollit anim id est
-                              laborum. Sed ut perspiciatis unde omnis iste natus error
+                            The value is most often limited by the fact that customers do not possess the necessary competencies to be able to select the right IT partner. Likewise, this often leads to a skewed relationship where the IT partner over time, takes full control and ownership of the project. The solution is that we as an IT partner are obliged to provide deeper insight to the customer, not set unreasonable requirements for the customer, and technically ensure that the customer has full ownership of his project.
+
                             </p>
                           </div>
                         </div>
@@ -75,15 +72,10 @@ class Onepage extends Component {
                           </div>
                           <div class='text'>
                             <p>
-                              Lorem ipsum dolor sit amet, consectetur adipisici ng elit, sed do
-                              eiusmod tempor incididunt ut labo re et dolore magna aliqua. Ut enim
-                              ad minim veni am, quis nostrud exercitation ullamco.
+                            Lean together - Full control to the customer.
                             </p>
                             <p>
-                              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                              dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                              proident, sunt in culpa qui officia deserunt mollit anim id est
-                              laborum. Sed ut perspiciatis unde omnis iste natus error
+                              Lad os lige foklare hvad det betyder...
                             </p>
                           </div>
                         </div>
@@ -95,15 +87,12 @@ class Onepage extends Component {
                           </div>
                           <div class='text'>
                             <p>
-                              Lorem ipsum dolor sit amet, consectetur adipisici ng elit, sed do
-                              eiusmod tempor incididunt ut labo re et dolore magna aliqua. Ut enim
-                              ad minim veni am, quis nostrud exercitation ullamco.
+                            The best part is no part
+
+ZolutionTech optimerer hele tiden teknologi værktøjer og interne udgifter, for at kunne levere markedets bedste priser, til den højeste kvalitet.
                             </p>
                             <p>
-                              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                              dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                              proident, sunt in culpa qui officia deserunt mollit anim id est
-                              laborum. Sed ut perspiciatis unde omnis iste natus error
+
                             </p>
                           </div>
                         </div>

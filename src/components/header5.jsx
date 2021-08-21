@@ -4,10 +4,7 @@ import { HashLink as Link } from 'react-router-hash-link'
 import Select from 'react-select'
 
 const options = [
-  { value: 'English', label: 'English' },
-  { value: 'French', label: 'French' },
-  { value: 'Spanish', label: 'Spanish' },
-  { value: 'Bengli', label: 'Bengli' },
+  { value: 'English', label: 'English' }
 ]
 
 const Header5 = () => {
@@ -58,7 +55,7 @@ const Header5 = () => {
                     </div>
                     <div class='text'>Phone Number</div>
                     <h4>
-                      <Link to={'/tel:+98787687676'}>+987 876 876 76</Link>
+                      <a href='tel:+4552179590'> +45 52 17 95 90</a>
                     </h4>
                   </div>
                   <div class='single-info'>
@@ -67,7 +64,7 @@ const Header5 = () => {
                     </div>
                     <div class='text'>Email Address</div>
                     <h4>
-                      <Link to={'/mailto:info@webmail.com'}>info@webmail.com</Link>
+                    <a href='mailto:am@zolutiontech.com'> am@zolutiontech.com</a>
                     </h4>
                   </div>
                 </div>
@@ -132,12 +129,12 @@ const Header5 = () => {
 
                 <ul class='social-links clearfix'>
                   <li>
-                    <Link target='_blank' to={{ pathname: 'facebook' }}>
+                    <Link target='_blank' to={{ pathname: 'https://www.facebook.com/ZolutionTech-145962567587951' }}>
                       <span class='fab fa-facebook-f'></span>
                     </Link>
                   </li>
                   <li>
-                    <Link target='_blank' to={{ pathname: 'instagram' }}>
+                    <Link target='_blank' to={{pathname:'https://www.linkedin.com/company/w-invest-group-aps/?viewAsMember=true'}}>
                       <span class='fab fa-linkedin-in'></span>
                     </Link>
                   </li>

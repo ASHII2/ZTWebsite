@@ -594,7 +594,7 @@ img {
   .css-yk16xz-control
   .css-g1d714-ValueContainer
   .css-1uccc91-singleValue {
-  color: #fff;
+  color: rgb(82, 114, 201);
 }
 .language
   .language-switcher
@@ -602,14 +602,14 @@ img {
   .css-yk16xz-control
   .css-g1d714-ValueContainer
   .css-1wa3eu0-placeholder {
-  color: #fff;
+  color: rgb(37, 37, 37);
 }
 
 .css-1okebmr-indicatorSeparator {
   width: 0 !important;
 }
 .css-tlfecz-indicatorContainer {
-  color: #ffffff;
+  color: #3d4daa;
   padding: 0 !important;
 }
 
@@ -619,7 +619,7 @@ img {
 .header-top .btn-light:hover {
   background: #0e1f2f;
   border-color: transparent;
-  color: #fff;
+  color: rgb(0, 0, 0);
   outline: none;
 }
 
